@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 
-export default ({ iconSize, stroke }) =>
+export default forwardRef(({ iconSize, stroke }, ref) =>
   <svg
     height={iconSize || 16}
     width={iconSize || 16}
@@ -8,6 +8,7 @@ export default ({ iconSize, stroke }) =>
     xmlns="http://www.w3.org/2000/svg"
   >
     <polyline
+      ref={ref}
       fill="none"
       points="22 7 12 18 2 7"
       stroke={stroke || '#37474f'}
@@ -15,4 +16,5 @@ export default ({ iconSize, stroke }) =>
       strokeLinejoin="round"
       strokeWidth="3"
     />
-  </svg>;
+  </svg>,
+);

@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 
-export default ({ iconSize, stroke }) =>
+export default forwardRef(({ iconSize, stroke }, ref) =>
   <svg
     height={iconSize || 16}
     width={iconSize || 16}
@@ -8,6 +8,7 @@ export default ({ iconSize, stroke }) =>
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
+      ref={ref}
       d="M19.5,12 C19.5,11.1715729 20.1715729,10.5 21,10.5 C21.8284271,10.5 22.5,11.1715729 22.5,12 C22.5,12.8284271 21.8284271,13.5 21,13.5 C20.1715729,13.5 19.5,12.8284271 19.5,12 Z M10.5,12 C10.5,11.1715729 11.1715729,10.5 12,10.5 C12.8284271,10.5 13.5,11.1715729 13.5,12 C13.5,12.8284271 12.8284271,13.5 12,13.5 C11.1715729,13.5 10.5,12.8284271 10.5,12 Z M1.5,12 C1.5,11.1715729 2.17157288,10.5 3,10.5 C3.82842712,10.5 4.5,11.1715729 4.5,12 C4.5,12.8284271 3.82842712,13.5 3,13.5 C2.17157288,13.5 1.5,12.8284271 1.5,12 Z"
       fill="none"
       stroke={stroke || '#37474f'}
@@ -15,5 +16,5 @@ export default ({ iconSize, stroke }) =>
       strokeLinejoin="round"
       strokeWidth="3"
     />
-  </svg>;
-
+  </svg>,
+);
