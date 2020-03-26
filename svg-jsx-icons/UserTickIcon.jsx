@@ -1,11 +1,12 @@
 import React, { forwardRef } from 'react';
 
-export default forwardRef(({ iconSize, stroke }, ref) =>
+export default forwardRef(({ iconSize, stroke, ...rest }, ref) =>
   <svg
     viewBox="0 0 24 24"
     height={iconSize || 16}
     width={iconSize || 16}
     xmlns="http://www.w3.org/2000/svg"
+    {...rest}
   >
     <path
       ref={ref}
