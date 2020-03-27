@@ -2,8 +2,11 @@ import ApprovalIcon from './ThumbsUpIcon';
 import ArrowDownIcon from './ArrowDownIcon';
 import BinIcon from './BinIcon';
 import BoldIcon from './BoldIcon';
+import ChevronLeftIcon from './ChevronLeftIcon';
+import ChevronRightIcon from './ChevronRightIcon';
 import CodeIcon from './CodeIcon';
 import ColorPickerIcon from './ColorPickerIcon';
+import CopyIcon from './CopyIcon';
 import DiscussionIcon from './DiscussionIcon';
 import DividerIcon from './DividerIcon';
 import DownloadIcon from './DownloadIcon';
@@ -16,6 +19,7 @@ import HeartIcon from './HeartIcon';
 import ImageIcon from './ImageIcon';
 import ItalicIcon from './ItalicIcon';
 import LightBulbIcon from './LightbulbIcon';
+import LockIcon from './LockIcon';
 import LogoutIcon from './LogoutIcon';
 import MoreIcon from './MoreIcon';
 import NotificationIcon from './NotificationIcon';
@@ -33,26 +37,34 @@ import UnderlineIcon from './UnderlineIcon';
 import UnorderedListIcon from './UnorderedListIcon';
 import UserIcon from './UserIcon';
 import UserTickIcon from './UserTickIcon';
+import UnlockIconfrom
+
+'./UnlockIcon';
 
 export {
   ApprovalIcon,
   ArrowDownIcon,
   BinIcon,
   BoldIcon,
+  ChevronLeftIcon,
+  ChevronRightIcon
   CodeIcon,
   ColorPickerIcon,
+  CopyIcon,
   DiscussionIcon,
   DividerIcon,
   DownloadIcon,
   ExpandIcon,
   EyeHiddenIcon,
   EyeIcon,
+  FlagIcon,
   GridIcon,
   HamburgerMenuIcon,
   HeartIcon,
   ImageIcon,
   ItalicIcon,
   LightBulbIcon,
+  LockIcon,
   LogoutIcon,
   MoreIcon,
   NotificationIcon,
@@ -67,6 +79,7 @@ export {
   ToggleOffIcon,
   ToggleOnIcon,
   UnderlineIcon,
+  UnlockIcon,
   UnorderedListIcon,
   UserIcon,
   UserTickIcon,
