@@ -11,7 +11,7 @@ export default forwardRef(({ iconSize, stroke, ...rest }, ref) =>
     <polyline
       ref={ref}
       fill="none"
-      stroke={stroke}
+      stroke={stroke || '#37474f'}
       points="6.5 2 17.5 12 6.5 22"
       strokeLinecap="round"
       strokeLinejoin="round"
